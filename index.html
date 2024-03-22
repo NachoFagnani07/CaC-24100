@@ -7,19 +7,43 @@
 <a href="www.google.com.ar">soy un link</a>
 
 <head>
-    <!---esto no lo ve el browser y es  todo lo que va dentro del body-->
+     <!---esto no lo ve el browser y es  todo lo que va dentro del body-->
     <title>Pagina principal</title>
 
     <link rel="icon" href="./favicons/favicon-16x16.png" type="image/x-icon">
+
+<!--incluir css en el html-->
+<!--1: interna -->
+        <style>
+                /* aca puede haber codigo css*/
+            #tablas{
+                text-decoration: none;
+                color: blueviolet;
+                font-size: 32px; /* rem |em son unidades de medida relativa" */
+                /* 16 px = 1 rem */
+            }
+
+            body{
+                background-color: lightblue
+                
+            }
+        </style>
+<!--2: in line-->
+
+<!--3: externa-->
+<link rel="stylesheet" href="./styles/styles.css">
+
+
 
 </head>
 
 <!--esto lo ve el usuario-->
 <body>
-    <header>
+    <header style="background-color: aqua;
+    margin: 15px; padding: 10px;">
         <ul>
             <li>
-                <a href="./html/tablas.html">tablas</a>
+                <a id="tablas" href="./html/tablas.html">tablas</a>
             </li>
             <li>
                 <a href="./html/etiquetas.html">etiquetas basicas</a>
@@ -40,9 +64,40 @@
         </ul>
     </header>
 <h1>Titulo principal de la pagina</h1><!---h1 es para el titulo de la pagina-->
+<h2 class ="Ubuntu-regular">  Subtitulo  </h2>
 <p>parrafo 1</p>
+
+<style>
+
+    .conejo {
+        color: chartreuse;
+
+    }
+    #conejo {
+        color: black;
+
+}
+
+    h3{
+    color: rgb(177, 60, 201) !important;
+
+    /* inline > id > class > tipo 
+    el !importan le gana a todos */
+}
+
+
+
+
+</style>
+
+<h3 id=" conejo"
+    class ="conejo"
+    style ="color: darkblue;" > soy un conejo  
+</h3>
+
 <a href="https://www.google.com"> google</a>
-<p><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1SLxgZ0XPEAb-jOFq9uwCIUxQ3cPMlzL_ng2WonmYHuFSCU4NiZysL4iKs1iXkzmlVc&usqp=CAU> <!---puede no tener cierre--></p>
+<p><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1SLxgZ0XPEAb-jOFq9uwCIUxQ3cPMlzL_ng2WonmYHuFSCU4NiZysL4iKs1iXkzmlVc&usqp=CAU>
+     <!---puede no tener cierre--></p>
 
 <h1>hola1</h1>
 <h2>hola2</h2>
